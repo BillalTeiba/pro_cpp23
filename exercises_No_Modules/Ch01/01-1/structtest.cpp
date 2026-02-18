@@ -1,5 +1,5 @@
 #include "employee.h"
-#include <print>
+#include <iostream>
 
 using namespace std;
 
@@ -14,8 +14,7 @@ int main()
 	};
 
 	// Print the values of an employee
-	println("Employee: {}{}", anEmployee.firstInitial, 
-		anEmployee.lastInitial);
-	println("Number: {}", anEmployee.employeeNumber);
-	println("Salary: ${}", anEmployee.salary);
+	cout << "Employee: " << anEmployee.firstInitial << anEmployee.lastInitial << '\n';
+	cout << "Number: " << anEmployee.employeeNumber << '\n';
+	cout << "Salary: $" << anEmployee.salary << '\n';
 }
